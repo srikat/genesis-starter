@@ -2,15 +2,17 @@
 
 Starter theme for Genesis framework based on Genesis Sample 2.3.0.
 
+[**Demo**](http://genesis-starter.wpdemos.co/)
+
 ## Features
 
-1. CSS Grid for Site Header Wrap, Content Sidebar Wrap, WordPress Galleries, Author Box, and Footer Widgets Wrap.
-2. Theme Logo in place of Custom Header so logo can be shown as an inline image instead of as a background.
+1. CSS Grid for Site Header Wrap, Content Sidebar Wrap, WordPress Galleries, Author Box, and Footer Widgets Wrap. Floats are used as fallback for browsers (IE) that do not yet support CSS Grid.
+2. [Theme Logo](https://sridharkatakam.com/theme-logo-genesis/) in place of Custom Header so logo can be shown as an inline image instead of as a background for better SEO. To select/upload a logo, go to Appearance > Customize > Site Identity. Click on "Select logo" button, upload/select your logo image, click on "Skip Cropping" button and finally "Save & Publish".
 3. Primary Navigation relocated inside the Header to the right with the hamburger menu icon remaining inline at smaller widths. Header Right widget area has been removed.
 4. Secondary Navigation moved from the Footer to its normal location, below the Header.
-5. An additional Footer Navigation Menu.
+5. [Footer Navigation Menu](https://sridharkatakam.com/footer-navigation-menu-genesis/).
 6. Mobile First CSS (except for the mobile menu section).
-7. Custom `col-1` to `col-6` classes for displaying items in columns. A `col` class also needs to be added to the parent container of items.
+7. Custom `col-1` to `col-6` classes for displaying items in 1 or 2 or 3 or 4 or 5 or 6 columns. A `col` class also needs to be added to the parent container of items.
 8. Blog Page Template has been removed. Archive Page Template has been renamed as Sitemap.
 9. Added Single Post Navigation.
 10. Removed all three-column content layouts.
