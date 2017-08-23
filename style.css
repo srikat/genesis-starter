@@ -507,6 +507,7 @@ th:first-child {
 .col {
 	display: grid;
 	grid-gap: 40px;
+	hyphens: auto;
 }
 
 .col-2 {

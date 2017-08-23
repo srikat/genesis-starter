@@ -33,6 +33,11 @@ Please visit http://my.studiopress.com/help/ for parent Genesis theme support.
 
 ### Change Log
 
-August 23, 2017
+*August 23, 2017*
 
 Initial Release.
+
+*August 24, 2017*
+
+* Added line-height for paragraphis in footer.
+* Added `hyphens: auto` for `.col`.
