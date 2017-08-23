@@ -64,10 +64,10 @@
 - Site Footer
 - Mobile First
 - Media Queries
-	- Max-width: 1023px
 	- Min-width: 401px
 	- Min-width: 501px
 	- Min-width: 861px
+	- Max-width: 1023px
 	- Min-width: 1024px
 	- Min-width: 1201px
 	- Min-width: 1341px
@@ -1430,137 +1430,6 @@ a img {
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1023px) {
-
-	/* ### Genesis Responsive Menus */
-
-	.genesis-responsive-menu .wrap {
-		padding: 0;
-	}
-
-	.genesis-responsive-menu {
-		display: none;
-		position: relative;
-	}
-
-	.genesis-skip-link .skip-link-hidden {
-		display: none;
-		visibility: hidden;
-	}
-
-	.menu-toggle,
-	.sub-menu-toggle {
-		background-color: #fff;
-		border-width: 0;
-		color: #333;
-		display: block;
-		/*margin: 0 auto;*/
-		overflow: hidden;
-		text-align: center;
-		visibility: visible;
-	}
-
-	.menu-toggle:focus,
-	.menu-toggle:hover,
-	.sub-menu-toggle:focus,
-	.sub-menu-toggle:hover {
-		background-color: #fff;
-		border-width: 0;
-		color: #c3251d;
-	}
-
-	.menu-toggle {
-		line-height: 22px;
-		position: relative;
-		z-index: 1000;
-	}
-
-	.menu-toggle::before {
-		font-size: 1.5em;
-		margin-right: 10px;
-		text-rendering: auto;
-		margin-top: 2px;
-	}
-
-	.sub-menu-toggle {
-		float: right;
-		padding: 13px 10px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 100;
-	}
-
-	.sub-menu .sub-menu-toggle {
-		padding: 12px 10px;
-	}
-
-	.sub-menu-toggle::before {
-		display: inline-block;
-		text-rendering: auto;
-		-webkit-transform: rotate( 0 );
-		-ms-transform:     rotate( 0 );
-		transform:         rotate( 0 );
-		-webkit-transition: transform .25s ease-in-out;
-		-ms-transition:     transform .25s ease-in-out;
-		transition:         transform .25s ease-in-out;
-	}
-
-	.sub-menu-toggle.activated::before {
-		-webkit-transform: rotate( 180deg );
-		-ms-transform:     rotate( 180deg );
-		transform:         rotate( 180deg );
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .menu-item {
-		display: block;
-		float: none;
-		position: relative;
-		text-align: left;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .menu-item:focus,
-	.genesis-responsive-menu .genesis-nav-menu .menu-item:hover {
-		position: relative;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
-		border: none;
-		margin-bottom: 1px;
-		padding: 15px 20px;
-		width: 100%;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
-		border: none;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
-	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
-		left: 0;
-		margin-left: 0;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu > .menu-item-has-children > a::after {
-		content: none;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
-		clear: both;
-		display: none;
-		margin: 0;
-		opacity: 1;
-		padding-left: 15px;
-		position: static;
-		width: 100%;
-	}
-
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
-		margin: 0;
-	}
-
-}
-
 @media only screen and (min-width: 401px) {
 
 	.site-header {
@@ -1877,6 +1746,137 @@ a img {
 			clear: none;
 		}
 
+	}
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+	/* ### Genesis Responsive Menus */
+
+	.genesis-responsive-menu .wrap {
+		padding: 0;
+	}
+
+	.genesis-responsive-menu {
+		display: none;
+		position: relative;
+	}
+
+	.genesis-skip-link .skip-link-hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	.menu-toggle,
+	.sub-menu-toggle {
+		background-color: #fff;
+		border-width: 0;
+		color: #333;
+		display: block;
+		/*margin: 0 auto;*/
+		overflow: hidden;
+		text-align: center;
+		visibility: visible;
+	}
+
+	.menu-toggle:focus,
+	.menu-toggle:hover,
+	.sub-menu-toggle:focus,
+	.sub-menu-toggle:hover {
+		background-color: #fff;
+		border-width: 0;
+		color: #c3251d;
+	}
+
+	.menu-toggle {
+		line-height: 22px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	.menu-toggle::before {
+		font-size: 1.5em;
+		margin-right: 10px;
+		text-rendering: auto;
+		margin-top: 2px;
+	}
+
+	.sub-menu-toggle {
+		float: right;
+		padding: 13px 10px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	.sub-menu .sub-menu-toggle {
+		padding: 12px 10px;
+	}
+
+	.sub-menu-toggle::before {
+		display: inline-block;
+		text-rendering: auto;
+		-webkit-transform: rotate( 0 );
+		-ms-transform:     rotate( 0 );
+		transform:         rotate( 0 );
+		-webkit-transition: transform .25s ease-in-out;
+		-ms-transition:     transform .25s ease-in-out;
+		transition:         transform .25s ease-in-out;
+	}
+
+	.sub-menu-toggle.activated::before {
+		-webkit-transform: rotate( 180deg );
+		-ms-transform:     rotate( 180deg );
+		transform:         rotate( 180deg );
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .menu-item {
+		display: block;
+		float: none;
+		position: relative;
+		text-align: left;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .menu-item:focus,
+	.genesis-responsive-menu .genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
+		border: none;
+		margin-bottom: 1px;
+		padding: 15px 20px;
+		width: 100%;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
+		border: none;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+		left: 0;
+		margin-left: 0;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu > .menu-item-has-children > a::after {
+		content: none;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		margin: 0;
+		opacity: 1;
+		padding-left: 15px;
+		position: static;
+		width: 100%;
+	}
+
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
 	}
 
 }
