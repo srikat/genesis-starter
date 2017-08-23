@@ -27,7 +27,7 @@ Starter theme for Genesis framework based on Genesis Sample 2.3.0.
 
 ## Theme Support
 
-This child theme theme is provided as is - without any support.
+This child theme is provided as is - without any support.
 
 Please visit http://my.studiopress.com/help/ for parent Genesis theme support.
 
