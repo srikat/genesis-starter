@@ -41,3 +41,4 @@ Initial Release.
 
 * Added line-height for paragraphs in footer.
 * Added `hyphens: auto` for `.col`.
+* Removed unneeded top margin for mobile menu icon.
