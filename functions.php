@@ -41,8 +41,8 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
+define( 'CHILD_THEME_NAME', 'Genesis Starter' );
+define( 'CHILD_THEME_URL', 'https://github.com/srikat/genesis-starter' );
 define( 'CHILD_THEME_VERSION', '2.3.0' );
 
 // Enqueue Scripts and Styles.
@@ -280,4 +280,13 @@ function custom_do_footernav() {
 		'menu_class'     => $class,
 	) );
 
+}
+
+// Change Footer text.
+// https://my.studiopress.com/documentation/customization/shortcodes-reference/footer-shortcode-reference/
+add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_filter' );
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright before="Copyright "] [footer_childtheme_link before ="&middot; "] on [footer_genesis_link] &middot; [footer_wordpress_link] &middot; [footer_loginout]';
+
+	return $creds;
 }
