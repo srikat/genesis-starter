@@ -282,9 +282,12 @@ function custom_do_footernav() {
 
 }
 
-// Change Footer text.
-// https://my.studiopress.com/documentation/customization/shortcodes-reference/footer-shortcode-reference/
 add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_filter' );
+/**
+ * Change Footer text.
+ *
+ * @link  https://my.studiopress.com/documentation/customization/shortcodes-reference/footer-shortcode-reference/
+ */
 function sp_footer_creds_filter( $creds ) {
 	$creds = '[footer_copyright before="Copyright "] [footer_childtheme_link before ="&middot; "] on [footer_genesis_link] &middot; [footer_wordpress_link] &middot; [footer_loginout]';
 
