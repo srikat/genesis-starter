@@ -134,8 +134,8 @@ add_filter( 'genesis_seo_title', 'genesis_sample_header_inline_logo', 10, 3 );
  */
 function genesis_sample_header_inline_logo( $title, $inside, $wrap ) {
 	// If the custom logo function and custom logo exist, set the logo image element inside the wrapping tags.
-	if ( function_exists( 'has_genesis_sample_logo' ) && has_genesis_sample_logo() ) {
-		$inside = sprintf( '<span class="screen-reader-text">%s</span>%s', esc_html( get_bloginfo( 'name' ) ), get_genesis_sample_logo() );
+	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
+		$inside = sprintf( '<span class="screen-reader-text">%s</span>%s', esc_html( get_bloginfo( 'name' ) ), get_custom_logo() );
 	} else {
 		// If no custom logo, wrap around the site name.
 		$inside	= sprintf( '<a href="%s">%s</a>', trailingslashit( home_url() ), esc_html( get_bloginfo( 'name' ) ) );
@@ -168,7 +168,7 @@ add_filter( 'genesis_attr_site-description', 'genesis_sample_add_site_descriptio
  * @author @_srikat
  */
 function genesis_sample_add_site_description_class( $attributes ) {
-	if ( function_exists( 'has_genesis_sample_logo' ) && has_genesis_sample_logo() ) {
+	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
 		$attributes['class'] .= ' screen-reader-text';
 	}
 
