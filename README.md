@@ -1,3 +1,5 @@
+_Archived - No longer maintained
+
 # Genesis Starter Theme
 
 Starter theme for Genesis framework based on Genesis Sample 2.3.0.
