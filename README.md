@@ -1,4 +1,4 @@
-_Archived - No longer maintained
+_Archived - No longer maintained_
 
 # Genesis Starter Theme
 
